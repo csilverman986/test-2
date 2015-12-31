@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sec_2_Ex_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59h-nj-IV4">
+                                <rect key="frame" x="85" y="358" width="151" height="30"/>
+                                <state key="normal" title="Hide Red Flag"/>
+                                <connections>
+                                    <action selector="hideRedFlag:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7i-SX-KTh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-5a-YqS">
+                                <rect key="frame" x="79" y="438" width="163" height="30"/>
+                                <state key="normal" title="Hide Blue Flag"/>
+                                <connections>
+                                    <action selector="hideBlueFlag:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSG-ln-JOd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redFlag" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-Qc-Nxx">
+                                <rect key="frame" x="28" y="105" width="116" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueFlag" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-IC-ch5">
+                                <rect key="frame" x="176" y="108" width="116" height="87"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blueButton" destination="w1S-5a-YqS" id="6EY-wE-DJw"/>
+                        <outlet property="blueFlag" destination="ybS-IC-ch5" id="09v-3P-kyA"/>
+                        <outlet property="redButton" destination="59h-nj-IV4" id="4ET-dn-af9"/>
+                        <outlet property="redFlag" destination="hvU-Qc-Nxx" id="8Jc-DB-X4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="281"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueFlag" width="2000" height="2153"/>
+        <image name="redFlag" width="300" height="300"/>
+    </resources>
+</document>
